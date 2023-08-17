@@ -8,7 +8,6 @@ Notes based on the excellent review of conference proceedings by Wendy Freedman 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2FrY6gRPC7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 >Story Time: She worked at the Harvard College Observatory as a "computer" (a person who computes) and was paid 30 cents an hour. She was also a suffragette (_a woman seeking the right to vote through organized protest, a term originating in Britain to mock women fighting for the right to vote_) and was arrested for picketing the White House in 1917. She died of cancer in 1921. Hubble mentioned that she should have won the Nobel Prize, but Nobel Prizes are and were not awarded posthumously. Before Leavitt the only way to measure distances was using parallax. This only works for nearby stars. If a star was dim, there was no other way to tell if it was just dim or actually further away
-1
 
 ### Timeline of Cepheid Developments
 
