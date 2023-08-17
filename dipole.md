@@ -53,3 +53,15 @@ $$E_{\phi} = -\epsilon_x \sin\phi + \epsilon_y \cos\phi$$
     which we integrate over the angular range and express in terms of the spherical basis vectors $\hat{r}, \hat{\theta}, \hat{\phi}$ and integrated over the patch. We get our $E_r, E_\theta, E_\phi$ for a patch at zenith.
 
 
+# Stokes Parameters
+
+The Stokes parameters are defined as:
+
+$$\begin{align}
+I &= \langle E_x^2 \rangle + \langle E_y^2 \rangle\\
+Q &= \langle E_x^2 \rangle - \langle E_y^2 \rangle\\
+U &= \langle E_x E_y^* \rangle + \langle E_x^* E_y \rangle\\
+V &= i(\langle E_x E_y^* \rangle - \langle E_x^* E_y \rangle)
+\end{align}$$
+
+where $\langle \rangle$ denotes time averaging. For a monochromatic wave, we can write the electric field as $\vec{E}(t) = \vec{E}_0 e^{-i\omega t}$ and the Stokes parameters are given by:
