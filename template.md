@@ -37,6 +37,12 @@ def function():
 
 ![Image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
+Video
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/dQw4w9WgXcQ.gif)](https://youtu.be/dQw4w9WgXcQ)
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/{video_id})](https://youtu.be/{video_id})
+
 > Blockquote
 
 | Table | Header |
