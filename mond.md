@@ -2,7 +2,9 @@
 
 # Introduction
 
-Notes on MOND. Useful as a reference for studying MOND, etc.
+Notes on MOND. Useful as a reference for studying MOND, etc. Based on the recent MOND results using GAIA data: https://arxiv.org/abs/2304.07322, https://arxiv.org/pdf/2305.04613.pdf
+
+MOND Review: Sanders and McGaugh 2002: https://arxiv.org/pdf/astro-ph/0204521.pdf
 
 ## MOND
 
@@ -59,3 +61,8 @@ where $\phi$ is the gravitational potential. The Euler-Lagrange equation for thi
 $$
 \nabla \cdot \left( \mu(\frac{|\nabla\phi|}{a_0}) \ \nabla\phi \right) = 4\pi G \rho \quad \text{where} \quad \mu(x) = \frac{dF(x^2)}{dx}
 $$
+where the predicted acceleration is given by $a = -\nabla\phi$.
+
+According to Sanders and McGaugh, one problem with AQUAL (or for any scalar-tensor theory in which the scalar field enters as a conformal factor multiplying the Einstein metric) is the failure to predict the amount of gravitational lensing actually observed in rich clusters of galaxies. https://arxiv.org/pdf/astro-ph/0204521.pdf
+
+
