@@ -99,3 +99,45 @@ B_U = (B_\theta {B_\phi'}^* + B_\phi {B_\theta'}^*) \\
 B_V = i(B_\theta {B_\phi'}^* - B_\phi {B_\theta'}^*)
 \end{align}$$
 
+where $\langle \rangle$ denotes time averaging. 
+
+For a monochromatic plane-polarized wave travelling along the z-direction, the electric field is given by $\vec{E}(t) = ( \epsilon_x \hat{x} + \epsilon_y \hat{y} ) e^{-i\omega t}$ and we can compute the Stokes parameters from above.
+
+## Source Stokes
+
+For a source at zenith with polarization angle $\psi$, we have $\vec{E}(t) = ( \cos{\psi} \hat{x} + \sin{\psi} \hat{y} ) e^{-i\omega t}$. Using the unit vectors in polar coordinates, we can write:
+$$
+\hat{x} = \sin\theta \cos\phi \hat{r} + \cos\theta\cos\phi \hat{\theta} -\sin\phi \hat{\phi}\\
+\hat{y} = \sin\theta \sin\phi \hat{r} + \cos\theta\sin\phi \hat{\theta} + \cos\phi \hat{\phi}\\
+\hat{z} = \cos\theta \hat{r} - \sin\theta \hat{\theta}
+$$
+
+which gives:
+
+$$\begin{align}
+E_\theta = \cos{\psi}\cos\theta \cos\phi + \sin\psi\cos\theta\sin\phi &= \cos\theta\cos(\psi-\phi)\\
+E_\phi = -\cos\psi\sin\phi + \sin\psi\cos\phi &= \sin(\psi-\phi)\\
+\end{align}$$
+
+We can then compute the Stokes parameters (_check factor of 2_)):
+
+$$\begin{align}
+I &= 1 \\
+Q &= \cos^2(\psi+\phi) - \sin^2(\psi-\phi)\\
+U &= 2 \cos(\psi+\phi)\sin(\psi-\phi) \\
+V &= 0
+\end{align}$$
+
+
+Zenith Singularity: For $\theta\rightarrow0$, there's some abiguity in the direction of $\hat{\theta}$ and $\hat{\phi}$, but we can take the limit as $\theta,\phi\rightarrow0^+$ together to unabiguously approach the zenith (and orient the zenith coordinate with the usual $x,y-$axes) and get at the zenith:
+
+$$\begin{align}
+E_\theta = \cos\psi\\
+E_\phi = \sin\psi\\
+\end{align}$$
+as expected.
+
+
+## Beam Stokes
+
+
