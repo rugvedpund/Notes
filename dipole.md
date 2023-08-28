@@ -52,16 +52,50 @@ $$E_{\phi} = -\epsilon_x \sin\phi + \epsilon_y \cos\phi$$
 
     which we integrate over the angular range and express in terms of the spherical basis vectors $\hat{r}, \hat{\theta}, \hat{\phi}$ and integrated over the patch. We get our $E_r, E_\theta, E_\phi$ for a patch at zenith.
 
+## Dipole Beam Pattern
 
-# Stokes Parameters
+For a dipole antenna of $L<<\lambda/2$ oriented along the $z$-axis the polarization response in the far-field limit is given by
+$$B_\theta=i\eta \frac{kI_0le^{-ikr}}{4\pi r} \sin\theta \sim l\nu \sin\theta\\
+B_r=B_\phi=0$$
 
-The Stokes parameters are defined as:
+We get the dipoles along $x-$ and $y-$ axes by a simple rotation of the above. Simpler if converted to $B_x, B_y, B_z$ basis.
+
+## Stokes Parameters
+
+Given a beam, we can calculate the Stokes parameters as
+
+$$
+S = \int d\Omega \ B_\theta E_\theta + B_\phi E_\phi
+$$
+
+where $B_\theta, B_\phi$ are the beam patterns and $E_\theta, E_\phi$ are the electric field components in the $\theta, \phi$ directions.
+
+Now the power is given by
+
+$$
+P = \braket{S S^*} = \braket{\int (B_\theta E_\theta + B_\phi E_\phi)(B_\theta E_\theta + B_\phi E_\phi)^* \ d\Omega d\Omega^*}
+$$
+
+And we can use the following statistical properties
 
 $$\begin{align}
-I &= \langle E_x^2 \rangle + \langle E_y^2 \rangle\\
-Q &= \langle E_x^2 \rangle - \langle E_y^2 \rangle\\
-U &= \langle E_x E_y^* \rangle + \langle E_x^* E_y \rangle\\
-V &= i(\langle E_x E_y^* \rangle - \langle E_x^* E_y \rangle)
+\braket{E_\theta(\hat{n}) E_\theta^*(\hat{n}')} &= \frac{1}{2} (I+Q) \delta(\hat{n}-\hat{n}') \\
+\braket{E_\phi(\hat{n}) E_\phi^*(\hat{n}')} &= \frac{1}{2} (I-Q) \delta(\hat{n}-\hat{n}') \\
+\braket{E_\theta(\hat{n}) E_\phi^*(\hat{n}')} &= \frac{1}{2} (U-iV) \delta(\hat{n}-\hat{n}')
 \end{align}$$
 
-where $\langle \rangle$ denotes time averaging. For a monochromatic wave, we can write the electric field as $\vec{E}(t) = \vec{E}_0 e^{-i\omega t}$ and the Stokes parameters are given by:
+Thus, given a beam pattern, the power recieved can be written simply in terms of the Stokes paramters as
+
+$$
+P = \braket{S S^*}= \int d\Omega \ B_I I + B_Q Q + B_U U + B_V V
+$$
+
+If we have two beams, $B$ and $B'$, then the cross Stokes parameters are given by
+
+$$\begin{align}
+B_I = \frac{1}{2} (B_\theta {B_\theta'}^* + B_\phi {B_\phi'}^*) \\
+B_Q = \frac{1}{2} (B_\theta {B_\theta'}^* - B_\phi {B_\phi'}^*) \\
+B_U = (B_\theta {B_\phi'}^* + B_\phi {B_\theta'}^*) \\
+B_V = i(B_\theta {B_\phi'}^* - B_\phi {B_\theta'}^*)
+\end{align}$$
+
