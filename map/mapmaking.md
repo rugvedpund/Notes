@@ -2,10 +2,12 @@
 
 ## Introduction
 
-Notes on map-making for LuSEE-Night. For an elementary review, refer to the excellent paper by Tegmark https://arxiv.org/pdf/astro-ph/9611130.pdf [^1]
+Notes on map-making for LuSEE-Night. For an excellent review, refer to the paper by Tegmark https://arxiv.org/pdf/astro-ph/9611130.pdf [^1]
 [^1]: Tegmark has a crazy science page. Look up https://space.mit.edu/home/tegmark/crazy.html
 
 ## Map-Making
+
+![Alt text](image.png)
 
 Map making is a data reduction process. It is the process of converting time-ordered data (TOD) to a map. The TOD is a vector of length $N_{\text{samples}}$ and the map is a vector of length $N_{\text{pixels}}$. Which map-making method to use depends on what the map is to be used for. Common use cases are:
 - to facilitate comparison with other experiments
