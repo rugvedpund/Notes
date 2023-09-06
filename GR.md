@@ -6,3 +6,8 @@ It might be helpful to think of space-time as being a flow/waterfall rather than
 
 Example rotating BH:
 ![](https://bigthink.com/wp-content/uploads/2021/11/kerr_waterfall.gif)
+
+
+## Averaging Issue in GR
+
+Based on https://arxiv.org/pdf/gr-qc/0701116.pdf. Average of a tensor is not the same as the tensor of the average. Cosmologically relevant averages may be ill-defined.
