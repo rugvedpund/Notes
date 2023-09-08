@@ -17,9 +17,9 @@ Then, accurate distances to stars and globular lusters by Harlow Shapley led to 
 
 "... observation and discussion of the radial velocities, internal motions and distribution of spiral nebulae, of th real and apparent brightness of novae, of the maximum luminsity of galactic and cluster stars, and finally of the dimensions of our galactic system, all seem to definitely oppose the 'island universe' hypothesis of spiral nebulae." - Shapely, 1919. Island Universe originated in 18th century due to Immanuel Kant. By 1925, Leavitt and Hubble allowed this alternate view to become established.
 
-## Beginning of modern cosmology - Einstein 1917
+## Beginning of modern cosmology
 
-- 1917: Universe is static
+- 1917: Einstein - Universe is static
 
 Einstein assumed that universe was homogenous, isotropic and *static*. Infamously, introducing the $\Lambda$ term to make the universe static. Against this, de Sitter (1917), Friedmann (1922,1924) and Lemaitre (1927) proposed a solution to Einstein's equations which was homogenous, isotropic and *dynamic*. Robertson (1928) also calculated a valocity-distance relation for these models. Of course, ignored as esoteric mathematical curiosities.
 
@@ -37,9 +37,7 @@ Newtonian model can be extended to hot radiation-dominated phase (Narlikar 1996)
 
 Conceptually however, only valid for low-velocity, weak gravitation limit. Cosmology probes beyond these limits. Velocity addition does not work, and Poisson equation is not valid with boundary conditions at infinity.
 
-- Tired photon 
+- Tired photon model, Milne's kinematic relativity, Matter-Antimatter symmetric cosmology
 
-
-
-
+## Steady State Cosmology
 
