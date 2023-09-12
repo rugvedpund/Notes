@@ -16,7 +16,10 @@ In other words, in a mathematically perturbative sense, *does the inhomogenous u
 
 ### The Averaging Problem
 
-The problem with "averaging" equations of GR arises when one tries to define it before applying perturbative machinery. Some attempts with their one-line refutations are as follows:
+The problem with "averaging" equations of GR arises when one tries to define it before applying perturbative machinery. Some attempts with their one-line refutations are as follows[^1]:
+[^1]: [Zakhmetdonovnotes](C:\Users\Rugved Pund\Notes\phy560\9703016.pdf)
+
+
 
 1. **Covariant Volume Average**: Averaging over compact subspaces of a pseudo-Riemannian manifold is the obvious first candidate. However, this approach fails for the simple reason that volume-integration of tensors leads to objects that fail to transform as tensors. 
 1. **Statistical/Ensemble Averages**: Another obvious candidate, defined by perhaps utilizing the ergodicity of GR dynamics. This fails because they require a curved lumpy space-time manifold to be split into space-like and time-like subspaces which cannot be accomplished generally.
@@ -28,7 +31,7 @@ $$ \braket{\left( R_{\alpha\beta} - \frac{1}{2} g_{\alpha\beta}R \right)} \neq \
 One must split the product 
 $$ \braket{g_{\alpha\beta}R} = \braket{g_{\alpha\beta}}\braket{R} + C(g_{\alpha\beta},R) $$ (3)
 
-where $C(g_{\alpha\beta},R)$ is a *correlation tensor* term. Averaging, thus, modifies the Einstein's equations by an effective correlation term. 
+where $C(g_{\alpha\beta},R)$ is a *correlation* term. Averaging, thus, modifies the Einstein's equations by an effective correlation term. 
 
 
 
