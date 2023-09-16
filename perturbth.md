@@ -9,9 +9,9 @@ Based on the less known lecture series here:
 ## Introduction
 
 First we classify perturbations for any 2-tensor quantity
-$$\begin{align}
+$$\begin{aligned}
   X_{\mu\nu} &= X_{\mu\nu} + \delta X_{\mu\nu}
-\end{align}$$
+\end{aligned}$$
 have 10 degrees of freedom. Most relevant for cosmology by Bardeen (1980) - decomposition to Scalar+Vector+Tensor. These remain decoupled from one another at the first-order perturbation theory.
 
 > So second order and onwards, vector perturbations can couple to scalar? So galaxy rotation can be explained by the scalar effect of vector and dark energy by scalar effect of tensors?
@@ -101,6 +101,13 @@ from homogeneity and isotropy.
 Similarly, at order 1 we get dependence on $ \Theta $. at order 2 we get dependence on $ \sigma $. This followed from the number of derivatives appearing in each perturbation. So in super-horizon fluctuations, $ \sigma,\Theta $ fluctuations are suppressed. So we start with N fluids with known sound speeds $ \frac{\delta p_a}{\delta \rho_a} - c_s^2 $. So the set of starting conditions is just the density perturbations of each fluid.
 
 Among the set of initial conditions $ \{ \delta_a \} $ one subset is special. Let us start with homogenous universe $ \bar{\rho},\bar{p} $. Assume: 
-$$\rho_a(t,x) = \bar{\rho}(t+\delta t(x)) \\
-p_a(t,x) = \bar{p}(t+\delta t(x)) $$ 
-This is a very interesting choice. This means that the density at any point is related to the average density a linear peturbation away in time. A natural way to encode "clumping" over time. 
+$$\rho_a(t,x) = \bar{\rho}(t+\delta t(x)) = \bar{\rho}(t) + \dot{\bar{\rho}}\delta t \\
+p_a(t,x) = \bar{p}(t+\delta t(x)) = \bar{p}(t) + \dot{\rho{p}}\delta t $$ 
+This is a very interesting choice. This means that the density at any point is related to the average density a linear peturbation away in time. All quantities are perturbed because we shift time. $ \delta t(x) $ is the same for all fluids. This follows when perturbations are sourced by a single degree of freedom and plays the role of a clock. This gives a lot of non-trivial results. 
+
+Computing $ \delta t $ : 
+$$\delta t(x) = \frac{\delta \rho_a}{\dot{\bar{\rho_a}}} \\
+-3 \frac{a'}{a} \delta t = \frac{\delta \rho_a}{(\bar{\rho_a} + \bar{p_a})}, \forall a$$ 
+
+For all species $ \forall a,b $ 
+$$\frac{\delta \rho_a}{\bar{\rho_a} + \bar{p_a}}$$ 
