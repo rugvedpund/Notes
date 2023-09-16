@@ -9,9 +9,9 @@ Based on the less known lecture series here:
 ## Introduction
 
 First we classify perturbations for any 2-tensor quantity
-$$\begin{aligned}
-  X_{\mu\nu} &= X_{\mu\nu} + \delta X_{\mu\nu}
-\end{aligned}$$
+$$
+  X_{\mu\nu} = X_{\mu\nu} + \delta X_{\mu\nu}
+$$
 have 10 degrees of freedom. Most relevant for cosmology by Bardeen (1980) - decomposition to Scalar+Vector+Tensor. These remain decoupled from one another at the first-order perturbation theory.
 
 > So second order and onwards, vector perturbations can couple to scalar? So galaxy rotation can be explained by the scalar effect of vector and dark energy by scalar effect of tensors?
