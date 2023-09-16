@@ -22,14 +22,14 @@ Since this follows from $SO(3)$ invarianc of the background FRWL metric. We will
 
 In the given limit, scalar perturbations are generalization of newtonian potential. In usual conditions, vector perturbations go to zero. Need to work very hard physically to get these at observational levels.
 
-** For $g_{\mu\nu}$ **
+**For $g_{\mu\nu}$**
 
 - $g_{00} \implies \Psi$ 
 - $g_{ii} \implies \partial_i a(t)$ distortion of $a(t)$, called $\Phi$ that is a bit late in this direction
 - $\delta g_{0i} \implies \partial_i b$ gradient of some scalar function
 - $\delta g_{ij} = \left( \partial_i \partial_j - fr \Delta \delta_{ij} \right)\mu$ for some scalar function $\mu$, and traceless requires the $\delta_{ij}$ 
 
-** For $T_{\mu\nu}$ **
+**For $T_{\mu\nu}$**
 
 - $T_{00} \implies \delta\rho$ density perturbation made dimensionless by $\delta\rho \equiv \bar{\rho} \delta$ 
 - $T_{ii} = \delta p$ presssure part 
@@ -92,11 +92,12 @@ This is effectively like having a single flow of matter. The velocity at any giv
 Famous adiabatic initial conditions. Hubble crossing when $k\sim aH$. We fix initial conditions in the super-Hubble regime where $k\ll aH$. Many possible and allowed. A very small set is likely for our universe.
 
 In super-Hubble limit, from first principles $\delta T^\mu_\nu$ must be diagonal. Physics outside the horizon is similar to backgrund evolution. In orders of $\frac{k}{aH}$ 
-$$\delta {T^\mu_\nu}^{(0)} = 
+```math
+\delta {T^\mu_\nu}^{(0)} = 
 \begin{pmatrix}
   \delta\rho&&&\\&-p&&\\&&-p&\\&&&-p
-\end{pmatrix}\\
-$$
+\end{pmatrix}
+```
 from homogeneity and isotropy. 
 
 Similarly, at order 1 we get dependence on $\Theta$. at order 2 we get dependence on $\sigma$. This followed from the number of derivatives appearing in each perturbation. So in super-horizon fluctuations, $\sigma,\Theta$ fluctuations are suppressed. So we start with N fluids with known sound speeds $\frac{\delta p_a}{\delta \rho_a} - c_s^2$. So the set of starting conditions is just the density perturbations of each fluid.
