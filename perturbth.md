@@ -91,7 +91,7 @@ This is effectively like having a single flow of matter. The velocity at any giv
 
 Famous adiabatic initial conditions. Hubble crossing when $k\sim aH$. We fix initial conditions in the super-Hubble regime where $k\ll aH$. Many possible and allowed. A very small set is likely for our universe.
 
-In super-Hubble limit, from first principles $\delta T^\mu_\nu$ must be diagonal. Physics outside the horizon is similar to backgrund evolution. In orders of $\frac{k}{aH}$ 
+In super-Hubble limit, from first principles $\delta T^\mu_\nu$ must be diagonal. Physics outside the horizon is similar to backgrund evolution. In orders of $\frac{k}{aH}$ the zeroth order term $\delta {T^\mu_\nu}^{(0)} = \text{diag}(\rho,-p,-p,-p)$
 ```math
 \delta {T^\mu_\nu}^{(0)} = 
 \begin{pmatrix}
