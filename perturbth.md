@@ -16,7 +16,7 @@ have 10 degrees of freedom. Most relevant for cosmology by Bardeen (1980) - deco
 
 > So second order and onwards, vector perturbations can couple to scalar? So galaxy rotation can be explained by the scalar effect of vector and dark energy by scalar effect of tensors?
 
-Since this follows from $ SO(3) $ invarianc of the background FRWL metric. _what happens when this breaks?_
+Since this follows from $ SO(3) $ invarianc of the background FRWL metric. We will keep thining of scalars, vectors and tensors in terms of their $ SO(#3) $ transformation properties.  _what happens when no longer manifest $ SO(3) $  breaks?_
 
 - If in vacuum, then easily show fom EFE that scalars and vectors vanish. Only tensors do not vanish, but propagate with second-order equations. Only physical modes. Other modes are just response to matter-stress. 
 
@@ -58,7 +58,7 @@ First thing that determines the evolution of perturbations is whether it is larg
 In Newtonian gauge, practical advantage. Any results obtained with $ \Phi_A,\Phi_H = \Phi, \Psi $. Shortcut, basically. Only need 2 illuminating EFEs.
 
 1. Shear component: $a^{-2}k^2(\Phi-\Psi)= 12 \pi G \ \sum_i (\bar{\rho}_i + \bar{p}_i) \sigma_i$ where $ i $ sums over all the fluids. Usually we will deal with fluids with no anisotropic stress. Gives $ \Phi=\Psi $.
-1. $ 00 $-component: $ a^{-2} \left( k^2\phi + 3 \frac{a'}{a} \left( \phi' + \frac{a'}{a}\Psi \right) \right) = 4\pi G \ \delta\rho_{\text{tot}} \implies \lim_{\lambda\gg\frac{a'}{a},k\gg \frac{a}{a}} \frac{-k^2}{a^2}\Phi = 4\pi G\delta\rho_{\text{tot}}  $. Poisson equation $ \frac{\Delta}{a^2}\Phi $ . Difference with ususal is the laplacian with $ a^2 $ factor because we are working in comoving space. Also, $ \Phi=\Psi $ relates the usual gravitational potential in the metric explaining why Poisson works here physically.
+1. $ 00 $-component: $ a^{-2} \left( k^2\phi + 3 \frac{a'}{a} \left( \phi' + \frac{a'}{a}\Psi \right) \right) = 4\pi G \ \delta\rho_{\text{tot}} \implies \lim_{\lambda\gg\frac{a'}{a},k\gg \frac{a}{a}} \frac{-k^2}{a^2}\Phi = 4\pi G\delta\rho_{\text{tot}}  $. Poisson equation $ \frac{\Delta}{a^2}\Phi $ . Difference with usual is the laplacian with $ a^2 $ factor because we are working in comoving space. Also, $ \Phi=\Psi $ relates the usual gravitational potential in the metric explaining why Poisson works here physically.
 
 ## Equations of Motion
 
@@ -100,5 +100,7 @@ from homogeneity and isotropy.
 
 Similarly, at order 1 we get dependence on $ \Theta $. at order 2 we get dependence on $ \sigma $. This followed from the number of derivatives appearing in each perturbation. So in super-horizon fluctuations, $ \sigma,\Theta $ fluctuations are suppressed. So we start with N fluids with known sound speeds $ \frac{\delta p_a}{\delta \rho_a} - c_s^2 $. So the set of starting conditions is just the density perturbations of each fluid.
 
-Among the st of initial conditions $ \{ \delta_a \} $ one subset is special. Let us start with homogenous universe $ \bar{rho},\bar{p} $. Assume: 
-$$\rho_a = $$ 
+Among the set of initial conditions $ \{ \delta_a \} $ one subset is special. Let us start with homogenous universe $ \bar{\rho},\bar{p} $. Assume: 
+$$\rho_a(t,x) = \bar{\rho}(t+\delta t(x)) \\
+p_a(t,x) = \bar{p}(t+\delta t(x)) $$ 
+This is a very interesting choice. This means that the density at any point is related to the average density a linear peturbation away in time. A natural way to encode "clumping" over time. 
