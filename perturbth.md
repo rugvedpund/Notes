@@ -92,12 +92,12 @@ This is effectively like having a single flow of matter. The velocity at any giv
 Famous adiabatic initial conditions. Hubble crossing when $k\sim aH$. We fix initial conditions in the super-Hubble regime where $k\ll aH$. Many possible and allowed. A very small set is likely for our universe.
 
 In super-Hubble limit, from first principles $\delta T^\mu_\nu$ must be diagonal. Physics outside the horizon is similar to backgrund evolution. In orders of $\frac{k}{aH}$ the zeroth order term $\delta {T^\mu_\nu}^{(0)} = \text{diag}(\rho,-p,-p,-p)$
-```math
+$$
 \delta {T^\mu_\nu}^{(0)} = 
 \begin{pmatrix}
   \delta\rho&&&\\&-p&&\\&&-p&\\&&&-p
 \end{pmatrix}
-```
+$$
 from homogeneity and isotropy. 
 
 Similarly, at order 1 we get dependence on $\Theta$. at order 2 we get dependence on $\sigma$. This followed from the number of derivatives appearing in each perturbation. So in super-horizon fluctuations, $\sigma,\Theta$ fluctuations are suppressed. So we start with N fluids with known sound speeds $\frac{\delta p_a}{\delta \rho_a} - c_s^2$. So the set of starting conditions is just the density perturbations of each fluid.
