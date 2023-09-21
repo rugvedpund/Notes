@@ -12,7 +12,7 @@ Optionally, tactics vision might be better if attacking squares "see through" pa
 
 Optionally, tactics vision might be improved by reducing the attacking power of a piece if it is responsible for defending another piece. And vice versa.
 
-**This should clearly identify material advantage.**
+I am imagining a gif of a game where positionally important squares are clear since they stand out. Especially for sacrifices.
 
 ## Issues
 
