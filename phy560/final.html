@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>final.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- # PHY560 Final Paper Proposal - Rugved Pund -->
+<h1 id="the-averaging-problem-and-backreaction-effects-in-general-relativity-and-cosmology">The Averaging Problem and Backreaction Effects in General Relativity and Cosmology</h1>
+<p>This proposal is based broadly on the excellent review of this topic by Ellis(2005)[1].</p>
+<h2 id="non-commutativity-of-einsteins-field-equations-and-averaging">Non-commutativity of Einstein's Field Equations and Averaging</h2>
+<p>The central issue is that any conventional averaging of the geometrical quantities does not commute with Einstein's equations at the different scales. For example,</p>
+<p><strong>EFE</strong>: Calculating the Einstein tensor $G_{1ab}\equiv R_{1ab}-\frac{1}{2}R_1g_{1ab}$ from a metric tensor $g_{1ab}$ at a length scale $l_1$ and determining the quantity $E(g_{1ab})\equiv G_{1ab} - \kappa T_{1ab}$ where $T_{1ab}$ is the stress-energy tensor at the same scale $l_1$.</p>
+<p><strong>Avg</strong>: Averaging the metric tensor $g_{1ab} \rightarrow g_{2ab}$ to get a smoothed metric tensor $g_{2ab}$ and the corresponding matter tensor $T_{1ab} \rightarrow T_{2ab}$ at the larger length scale $l_2 \gg l_1$ via a suitable averaging function $\braket{\cdot}: X_{ab} \mapsto \braket{X_{ab}}$</p>
+<p>These procedures can be shown to not commute from at least two different perspectives:</p>
+<ol>
+<li>Averaging does not commute with scalar derivatives: $$\partial_i\braket{g}\neq\braket{\partial_ig}$$</li>
+<li>The averaged inverse metric $g^{2ab}$, that depends non-linearly on the tensor components of $g_{1ab}$ is not the averaged version of $g^{1ab}$: $$ \braket{g^{1ab}}\neq g^{2ab}$$
+<ul>
+<li>This implies that the resulting Christoffel symbols $\Gamma^{a}<em>{2ab}\neq\braket{\Gamma^{a}</em>{1ab}}$</li>
+<li>And hence the Ricci components $R_{2ab}\neq\braket{R_{1ab}}$</li>
+<li>And finally, more non-linearities in calculating the Einstein tensor occur when calculating $G_{2ab}=R_{2ab}-\frac{1}{2}R_2g_{2ab}$.</li>
+</ul>
+</li>
+</ol>
+<p>Thus, if you smooth first and calculate the Einstein equations you fail to account for several non-linear terms in the process than if you calculate the Einstein equations first and then smooth: $$E\left(\braket{g_{1ab}}\right) \neq \braket{E(g_{1ab})}$$</p>
+<h2 id="cosmological-backreaction">Cosmological Backreaction</h2>
+<p>One immediate consequence of this issue is the so-called backreaction of perturbations in cosmology. We are mostly interested in averages of scalar quantities like the density perturbations, rate of expansion, etc. in order to find the best-fit cosmological parameters for an inhomogenous universe model. The averaging of Einstein's Field Equations then leads to the presence of an extra term: $$ G_{ab} = T_{ab} + \Lambda g_{ab} \rightarrow \braket{G_{ab}} + \delta E_{ab} = \braket{T_{ab}} + \Lambda \braket{g_{ab}}$$
+where $\delta E_{ab}$ is the backreaction term that can be looked at as a correction to the stress-energy tensor $\braket{T_{ab}}$ on the right or as a geometric correct to the Einstein tensor $\braket{G_{ab}}$ on the left. Such terms, due to their non-linear dependence on the perturbations, are difficult to control.</p>
+<h3 id="example-with-gravitational-waves">Example with Gravitational Waves:</h3>
+<p>A direct example of this appears in the calculation by Isaacson [2] for gravitational waves where a vacuum space-time with a rapidly varying gravitational wave appears to have an effective matter content when viewed on larger scales. For a a slowly varying background metric superimposed with high-frequency waves $$g_{\mu\nu} = \gamma_{\mu\nu} + \epsilon h_{\mu\nu}, \ \partial\gamma\sim\gamma/L, \ \partial h\sim h/\lambda$$ where $\lambda\ll L$, the Ricci tensor can be expanded as $$R_{\mu\nu}(\gamma+h) = R^{(0)}<em>{\mu\nu}(\gamma) + \epsilon R^{(1)}</em>{\mu\nu} + \epsilon^2 R^{(2)}<em>{\mu\nu} + \epsilon^3 R^{(3+)}</em>{\mu\nu}$$ Thus, if the actual space-time is empty i.e. $R_{\mu\nu}=0$, then the background metric is not that of empty space $R^{(0)}<em>{\mu\nu}\neq 0$, but can be shown to satisfy $$ R^{(0)}</em>{\mu\nu} - \frac{1}{2}R^{(0)}\gamma_{\mu\nu} = -8\pi T^{\text{eff}}<em>{\mu\nu} \ T^{\text{eff}}</em>{\mu\nu} = \frac{\epsilon^2}{8\pi}\left( R^{(2)}<em>{\mu\nu} - \frac{1}{2}R^{(2)}\gamma</em>{\mu\nu} \right)$$ which is the backreaction from the small-scale structure to the large-scale structure.</p>
+<h2 id="proposal">Proposal</h2>
+<h3 id="goals">Goals:</h3>
+<ol>
+<li>Overview of current literature for the cosmological backreaction of small perturbations in FLRW universe. The current leading ideas seem to be from Buchert(2008) [3] and Zaletdinov (1997) [4]</li>
+<li>Construct and attempt to solve for backreaction in a Toy Model of an empty Euclidean universe with a scalar lump at the origin</li>
+<li>Construct and attempt to solve for backreaction in an empty FLRW universe with a scalar lump at the origin.</li>
+</ol>
+<h2 id="references">References</h2>
+<p>[1] Ellis, G. F. R., and T. Buchert. “The Universe Seen at Different Scales.” Physics Letters A 347, no. 1–3 (November 2005): 38–46. https://doi.org/10.1016/j.physleta.2005.06.087.</p>
+<p>[2] Isaacson, Richard A. “Gravitational Radiation in the Limit of High Frequency. II. Nonlinear Terms and the Effective Stress Tensor.” Physical Review 166, no. 5 (February 25, 1968): 1272–80. https://doi.org/10.1103/PhysRev.166.1272.</p>
+<p>[3] Buchert, Thomas. “Dark Energy from Structure: A Status Report.” General Relativity and Gravitation 40, no. 2–3 (February 2008): 467–527. https://doi.org/10.1007/s10714-007-0554-8.</p>
+<p>[4] Zalaletdinov, Roustam M. “Averaging Problem in General Relativity, Macroscopic Gravity and Using Einstein’s Equations in Cosmology.” arXiv, March 6, 1997. http://arxiv.org/abs/gr-qc/9703016.</p>
+<hr>
+<script type="text/javascript" src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+
+</body>
+</html>
