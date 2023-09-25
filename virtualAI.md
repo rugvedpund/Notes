@@ -1,6 +1,6 @@
 # Full Virtual Productivity Environment
 
-## RSS rader with voice assistant
+## Radio Arxiv: RSS reader with voice assistant
 
 1. Parse RSS from arxiv, prioritize with some metric.
 1. Send description to ChatGPT to "summarize this paper: ..."

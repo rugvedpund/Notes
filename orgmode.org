@@ -1,0 +1,17 @@
+* First Org Mode File
+
+** Introduction
+
+M-Ret creates first level
+M-Ret-RightArrow creates second level and so on
+
+** Section 1 
+
+M-UpArrow/DownArrow moves around sublevels with all the text in it
+
+** TODOs
+
+Create todo flags by S-RightArrow
+Remove by S-LeftArrow
+
+** THis is the first section with Doom Emacs
