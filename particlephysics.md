@@ -24,3 +24,18 @@ Leptons consist of three families with individual conserved numbers $L_e, L_\mu,
 $$Q- I_3 = - \frac{1}{2}L$$
 
 This weak charge of leptons is corrrelated with $I_3$. 
+
+### Strong Coupling
+
+![atlas](ATLAS-AlphaS-Figure2.png)
+
+Obtained via transverse momentum of the $Z$ boson, and comparison with theory.
+
+A website with cool single slides of various fields:
+
+https://www.cpepphysics.org/
+
+![pp](particle_chart_May.5.2022-29.5-21-print1-2048x1458.jpg)
+
+![cosmo](universe_chart-2015-30x20-1-2048x1366.jpg)
+
