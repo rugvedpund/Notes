@@ -39,3 +39,12 @@ https://www.cpepphysics.org/
 
 ![cosmo](universe_chart-2015-30x20-1-2048x1366.jpg)
 
+> Antimatter has the same gravitational properties as matter. Read more about the Alpha-G experiment. https://www.nature.com/articles/s41586-023-06527-1
+
+### How to understand particle detectors as  a theorist
+
+![detector](Typical-components-of-a-particle-physics-detector-Different-types-of-particle-leave.png)
+
+### Nobel Prize in Physics 2023
+
+https://www.nobelprize.org/prizes/physics/2023/summary/
