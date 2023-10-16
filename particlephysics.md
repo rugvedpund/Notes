@@ -48,3 +48,8 @@ https://www.cpepphysics.org/
 ### Nobel Prize in Physics 2023
 
 https://www.nobelprize.org/prizes/physics/2023/summary/
+
+> 1. Nov 6: Short 3 page progress report
+> 1. Nov 20: Oral Presentation 1 slide/5min (Slide by Nov 17)
+> 1. Dec 13: Final Submission 10 pages
+
